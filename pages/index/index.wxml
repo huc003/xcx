@@ -1,0 +1,108 @@
+<!--pages/main/main.wxml-->
+<scroll-view scroll-y="true" style='width:100%;height:{{winHeight}}px;white-space: nowrap;'>
+  <view id="body" style='width:100%;height: 100%;display: inline-block;background: #F7F7F7;'>
+    <view style='width:100%;height:80rpx;background:#FD8AA4;padding-top:5px;'>
+      <view style='width:95%;height:70rpx;background:rgba(255,255,255,0.5);margin-left:10px;margin-right:10px;border-radius:5px;font-size:30rpx' bindtap='toPage' data-text='search'>
+        <image src='{{wxb}}' style='width:70rpx;height:70rpx;float:left;padding-left:10px;'></image>
+        <view style='width:100%;line-height:70rpx;color:#fff;padding-left:130rpx;'>请输入关键词或淘宝/天猫商品标题</view>
+      </view>
+    </view>
+    <view style='width:100%;background:#fff'>
+      <scroll-view scroll-x="true">
+      <view class="navbar">
+        <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+      </view>
+      </scroll-view>
+    </view>
+  <!--首页-->
+  <view hidden="{{currentTab!==0}}">
+    <swiper indicator-dots="{{indicatorDots}}"  style='width:100%;height:350rpx'
+              autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true"> 
+            <block wx:for="{{arr}}" wx:key="unique">
+              <swiper-item>
+                  <image src="{{item}}" style='width:100%;height:350rpx' class="slide-image"/> 
+              </swiper-item>
+            </block>
+      </swiper>
+      <view id="dh" style='width:100%;height:190rpx;background: #fff;margin-top: 10px;'>
+          <view style="display:flex; flex-direction:row;justify-content:space-around;padding-top:20rpx">
+            <view style="border-radius:50px;background:#FF5240;width:110rpx;height:110rpx;" bindtap='toPage' data-text='sales'>
+              <view style="border-radius:50px;background:#fff;width:100rpx;height:100rpx;background:rgba(255,255,255,0.1);">
+                <image src='{{ticket_money_fill}}' style='width:60rpx;height:60rpx;margin-top:25rpx;margin-left:25rpx;'></image>
+              </view>
+            </view>
+            <view style="border-radius:50px;background:#FEBD7C;width:110rpx;height:110rpx;">
+              <view style="border-radius:50px;background:#fff;width:100rpx;height:100rpx;background:rgba(255,255,255,0.1);">
+                <image src='{{ju}}' style='width:60rpx;height:60rpx;margin-top:25rpx;margin-left:25rpx;'></image>
+              </view>
+            </view>
+            <view style="border-radius:50px;background:#DD9EFD;width:110rpx;height:110rpx;">
+              <view style="border-radius:50px;background:#fff;width:100rpx;height:100rpx;background:rgba(255,255,255,0.1);">
+                <image src='{{video_fill}}' style='width:60rpx;height:60rpx;margin-top:25rpx;margin-left:25rpx;'></image>
+              </view>
+            </view>
+            <view style="border-radius:50px;background:#99C125;width:110rpx;height:110rpx;">
+              <view style="border-radius:50px;background:#fff;width:100rpx;height:100rpx;background:rgba(255,255,255,0.1);">
+                <image src='{{goods_hot_fill}}' style='width:60rpx;height:60rpx;margin-top:25rpx;margin-left:25rpx;'></image>
+              </view>
+            </view>
+            <view style="border-radius:50px;background:#FFA097;width:110rpx;height:110rpx;">
+              <view style="border-radius:50px;background:#fff;width:100rpx;height:100rpx;background:rgba(255,255,255,0.1);">
+                <image src='{{deliver_fill}}' style='width:60rpx;height:60rpx;margin-top:25rpx;margin-left:25rpx;'></image>
+              </view>
+            </view>
+          </view>
+          <!--文字-->
+          <view style="display:flex; flex-direction:row;justify-content:space-around;padding-top:15rpx;">
+            <view style="font-size:30rpx;">
+              销量榜单
+            </view>
+            <view style="font-size:30rpx;">
+              聚划算啊
+            </view>
+            <view style="font-size:30rpx;">
+              边看边买
+            </view>
+            <view style="font-size:30rpx;">
+              淘淘精选
+            </view>
+            <view style="font-size:30rpx;">
+              九块九邮
+            </view>
+          </view>
+      </view>
+      <view id="ms" style='width:100%;height:150px;background: #fff;margin-top: 10px;'>
+        <view style='width:100%;height:30px;'>
+          <image style='float:left;width:30px;height:30px;' src='{{qg}}'></image>
+          <text style='color:#F13737;font-size:30rpx;font-weight: bold;line-height:35px;float:left;'>正在秒杀</text>
+          <text style='margin-left:5px;line-height:25px;background:#000;border-radius:5px;color:#DFC945;display:block;float:left;margin-top:3px;'>
+            <text style='background:#FFF;border-radius:5px;color:#DFC945;background:rgba(255,255,255,0.2);padding-left:5px;padding-right:5px;'>08:00场</text>
+          </text>
+        </view>
+        <view>
+
+
+
+
+
+        </view>
+      </view>
+      <view id="hot" style='width:100%;height:250px;background: #fff;margin-top: 10px;'>
+        <view style='width:100%;height:35px;padding-top:5px;border-bottom:1px solid #F5F5F5'>
+          <text style='font-size:30rpx;background: #F13737;color:#fff;padding-left:10px;line-height:30px;width:120px;display:block;float:left;box-shadow:0px 1px  5px 0px #F13737;'>全网最热优惠券</text><text style='background: #F13737;line-height:30px;width:30px;display:block;margin-left:115px;border-radius:50px;color:#F13737;'>1</text>
+        </view>
+        <view>
+          
+        </view>
+      </view>
+    </view>
+    <!--女装-->
+    <view hidden="{{currentTab!==1}}">
+      女装
+    </view>
+    <!--百货-->
+    <view hidden="{{currentTab!==2}}">
+      百货
+    </view>
+  </view>
+</scroll-view>

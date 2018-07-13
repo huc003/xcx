@@ -1,0 +1,38 @@
+ /* pages/main/main.wxss */
+page{
+  font-family: '微软雅黑';
+  color: #8f8f97;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+  font-size: 14px;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+  padding-left:15px;
+  padding-right:15px;
+}
+.navbar .item.active{
+  color: #FD8AA4;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #FD8AA4;
+}
+/*隐藏滚动条*/
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}

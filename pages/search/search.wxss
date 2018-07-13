@@ -1,0 +1,25 @@
+/* pages/search/search.wxss */
+page{
+  font-family: '微软雅黑';
+  font-size: 30rpx;
+  background: #FFF;
+}
+#ss {
+  width:90%;
+  line-height:70rpx;
+  margin-right:10%;
+  background:#FFF;
+  border:0px;
+  color:rgb(255, 255, 255);
+  font-size:14px;
+  border-color:#FD8AA4;
+  border-style:outset;
+  border-radius:5px;
+  background-color:rgba(0, 0, 0, 0);
+  background:-webkit-gradient(linear,0% 0%,0% 100%,from(#FFCCCC),to(#FD8AA4))
+}
+#ss:hover{
+  color:#ffffff;
+  background-color:#ebf2df;
+  border-color:#FD8AA4;
+}

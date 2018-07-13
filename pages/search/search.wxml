@@ -1,0 +1,26 @@
+<!--pages/search/search.wxml-->
+<view id="body" style='width:100%;height: 100%;display: inline-block;background: #F7F7F7;'>
+  <!--搜索-->
+  <view style='width:100%;height:90rpx;background:#FD8AA4;padding-top:5px;'>
+    <view style='width:75%;float:left'>
+      <input placeholder='请输入关键词或淘宝/天猫商品标题' style='width:90%;height:70rpx;background:#FFF;border-radius:5px;font-size:30rpx;margin-left:5%;margin-right:5%;opacity: 0.5;padding-left:5px;'></input>
+    </view>
+    <view style='width:25%;float:left;'>
+        <button id="ss" style=''>搜索</button>
+    </view>
+  </view>
+  <!--大家都在搜索-->
+  <view style='background:#FFF;'>
+    <view style='width:100%;line-height:80rpx;background:#FFF;border-bottom:1px solid #F5F5F5;float:left'>
+      <image style='width:50rpx;height:50rpx;float:left;padding-top:15rpx;padding-left:25rpx;' src='{{hot_fill}}'></image>
+      <view style='padding-left:5px;float:left'>
+        大家都在搜
+      </view>
+      <image style='width:50rpx;height:50rpx;float:right;padding-right:25rpx;padding-top:15rpx;' src='{{refresh}}'></image>
+    </view>
+    <!--关键词-->
+    <view style='width:100%;background:#FFF;padding:10rpx;float:left;'>
+    <text  style='padding:15rpx;margin:15rpx;border:1px solid #F5F5F5;border-radius:5px;float:left' wx:for="{{search}}" data-idx="{{index}}"       wx:key="unique" bindtap="searchTap" data-text="{{item}}">{{item}}</text>
+    </view>
+  </view>
+</view>

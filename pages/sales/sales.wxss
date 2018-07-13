@@ -1,0 +1,6 @@
+/* pages/sales/sales.wxss */
+page{
+  background: #FFF;
+  font-family: '微软雅黑';
+  font-size: 30rpx; 
+}

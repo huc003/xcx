@@ -1,0 +1,48 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/goods/goods",
+    "pages/coupon/coupon",
+    "pages/my/my",
+    "pages/rank/rank",
+    "pages/countdown/countdown",
+    "pages/search/search",
+    "pages/sales/sales"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "淘客福利站",
+    "navigationBarTextStyle": "black"
+  },"tabBar": {
+    "color": "#8f8f97",
+    "backgroundColor": "#fff",
+    "selectedColor": "#FD8AA4",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "resources/icon/home.png",
+      "selectedIconPath": "resources/icon/home_fill.png"
+    },{
+      "pagePath": "pages/rank/rank",
+      "text": "排行榜",
+      "iconPath": "resources/icon/rank.png",
+      "selectedIconPath": "resources/icon/rank_fill.png"
+    },
+    {
+      "pagePath": "pages/countdown/countdown",
+      "text": "淘抢购",
+      "iconPath": "resources/icon/countdown.png",
+      "selectedIconPath": "resources/icon/countdown_fill.png"
+    },{
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "resources/icon/my.png",
+      "selectedIconPath": "resources/icon/my_fill.png"
+    }]
+  }
+}
