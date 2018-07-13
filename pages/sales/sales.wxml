@@ -10,7 +10,7 @@
       <!--商品列表卡片-->
       <view style='padding:2%;width:100%;border-bottom:1px solid #F5F5F5;float:left;padding-bottom:5px;font-size:30rpx;position:  relative'>
         <view style='width:35%;height:35%;margin-right:5%;float:left;'>
-          <image style='width:265rpx; height:265rpx;' bindload="imageLoad" src='../../resources/goods/goods1.jpg'></image>
+          <image style='width:265rpx; height:265rpx;' src='../../resources/goods/goods1.jpg'></image>
         </view>
         <view style='width:56%;float:left;'>
           <view style='width:100%;color:#8A8A8A'>听雨轩 可采+6支</view>
@@ -30,7 +30,7 @@
       <!--商品列表卡片-->
       <view style='padding:2%;width:100%;border-bottom:1px solid #F5F5F5;float:left;padding-bottom:5px;font-size:30rpx;position:  relative'>
         <view style='width:35%;height:35%;margin-right:5%;float:left;'>
-          <image style='width:265rpx; height:265rpx;' bindload="imageLoad" src='../../resources/goods/goods2.png'></image>
+          <image style='width:265rpx; height:265rpx;' src='../../resources/goods/goods2.png'></image>
         </view>
         <view style='width:56%;float:left;'>
           <view style='width:100%;color:#8A8A8A'>听雨轩 可采+6支</view>
@@ -50,7 +50,7 @@
       <!--商品列表卡片-->
       <view style='padding:2%;width:100%;border-bottom:1px solid #F5F5F5;float:left;padding-bottom:5px;font-size:30rpx;position:  relative'>
         <view style='width:35%;height:35%;margin-right:5%;float:left;'>
-          <image style='width:265rpx; height:265rpx;' bindload="imageLoad" src='../../resources/goods/goods3.png'></image>
+          <image style='width:265rpx; height:265rpx;' src='../../resources/goods/goods3.png'></image>
         </view>
         <view style='width:56%;float:left;'>
           <view style='width:100%;color:#8A8A8A'>听雨轩 可采+6支</view>

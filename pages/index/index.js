@@ -101,7 +101,7 @@ Page({
   toPage:function(e){
     console.log(e.currentTarget.dataset.text)
     wx.navigateTo({
-      url: '../' + e.currentTarget.dataset.text + "/" + e.currentTarget.dataset.text,
+      url: '../' + e.currentTarget.dataset.text + '/' + e.currentTarget.dataset.text,
     })
   }
 
