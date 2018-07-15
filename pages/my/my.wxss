@@ -1,1 +1,5 @@
 /* pages/my/my.wxss */
+page{
+  font-family: '微软雅黑';
+  color: #8f8f97;
+}

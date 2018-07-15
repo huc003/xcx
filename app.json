@@ -1,13 +1,15 @@
 {
   "pages":[
-    
+    "pages/countdown/countdown",
+    "pages/my/my",
+    "pages/rank/rank",
     "pages/index/index",
     "pages/logs/logs",
     "pages/goods/goods",
     "pages/coupon/coupon",
-    "pages/my/my",
-    "pages/rank/rank",
-    "pages/countdown/countdown",
+    
+    
+    
     "pages/search/search",
     "pages/sales/sales"
     

@@ -1,2 +1,93 @@
 <!--pages/my/my.wxml-->
-<text>my.wxml</text>
+<scroll-view scroll-y="true" style='width:100%;height:{{winHeight}}px;white-space: nowrap;'>
+  <view id='body' style='width:100%;height:100%;background:#fff;'>
+    <!--头像-->
+    <view style='width:100%;height:200rpx;background:#FD8AA4'>
+      <!--头像-->
+      <view style='width:100%;float:left'>
+        <view style='float:left;position: absolute;left:50rpx;'><image style='width:150rpx;height:150rpx;border-radius: 50%;border:1px solid #fff' src='../../resources/goods/goods1.jpg'></image></view>
+        <view style='float:left;position: absolute;left:240rpx;color:#fff'>
+          <view style='line-height:75rpx;'>半月</view>
+          <view style='line-height:75rpx;'>更新资料</view>
+        </view>
+        <!--消息通知-->
+        <view style='float:left;position: absolute;right:80rpx;color:#fff'>
+          <view style='line-height:75rpx;'>
+            <switch bindchange="changeSwitch" checked='{{message}}'/>
+          </view>
+          <view style='line-height:75rpx;font-size:24rpx;text-align: center'>消息通知</view>
+        </view>
+      </view>
+      
+
+
+    </view>
+    <!--底部-->
+    <view style='background:#FD8AA4;width:100%;height:100rpx;position:relative;'>
+      <view style='width:300rpx;height:120rpx;background:#fff;border-radius:70%;position:absolute;left:-24rpx;bottom:-25rpx;box-shadow:5px 1px  5px 5px #fff;'></view>
+        <view style='width:300rpx;height:120rpx;background:#fff;border-radius:70%;position:absolute;left:220rpx;bottom:-25rpx;box-shadow:5px 1px  5px 5px #fff;'> </view>
+        <view style='width:300rpx;height:120rpx;background:#fff;border-radius:70%;position:absolute;right:-20rpx;bottom:-25rpx;box-shadow:5px 1px  5px 5px #fff;'></view>
+        
+    </view>
+
+    <view style='width:100%;height:100rpx;position:relative;border-bottom:1px solid #F5F5F5;padding-bottom:40rpx;'>
+      <view style='color:#000;float:left;line-height:100rpx;padding-left:100rpx;'>
+        累计积分:50
+      </view>
+      <view style='float:right'>
+        <button style='margin-right:60rpx;border:0px;background:#FD8AA4;color:#fff;padding-left:60rpx;padding-right:60rpx;'>签到</button>
+      </view>
+    </view>
+    <!--广告图-->
+    <view style='width:100%;height:250rpx;padding-top:10rpx;'>
+      <image style='width:100%;height:250rpx;' src='../../resources/banner/banner4.png'></image>
+    </view>
+
+    <!--功能列表-->
+    <view style='width:100%;height:auto;margin-top:20rpx;'>
+      <view style='padding-left:20px;padding-bottom:20rpx;'>
+        会员功能
+      </view>
+      <view style='display:flex; flex-direction:row;justify-content:space-around;padding-bottom:20px;'>
+        <view style='text-align:center;float:left;padding-left:15px;padding-right:15px;'>
+          <image style='width:100rpx;height:100rpx;' src='../../resources/icon/order.png'></image>
+          <view style='font-size:30rpx;'>我的订单</view>
+        </view>
+        <view style='text-align:center;float:left;padding-left:15px;padding-right:15px;'>
+          <image style='width:100rpx;height:100rpx;' src='../../resources/icon/point.png'></image>
+          <view style='font-size:30rpx;'>积分商城</view>
+        </view>
+        <view style='text-align:center;float:left;padding-left:15px;padding-right:15px;'>
+          <image style='width:100rpx;height:100rpx;' src='../../resources/icon/cz.png'></image>
+          <view style='font-size:30rpx;'>操作说明</view>
+        </view>
+        <view style='text-align:center;float:left;padding-left:15px;padding-right:15px;'>
+          <image style='width:100rpx;height:100rpx;' src='../../resources/icon/lxkf.png'></image>
+          <view style='font-size:30rpx;'>联系客服</view>
+        </view>
+        
+      </view>
+
+      <view style='display:flex; flex-direction:row;justify-content:space-around;padding-bottom:20px;'>
+        <view style='text-align:center;float:left;padding-left:15px;padding-right:15px;'>
+          <image style='width:100rpx;height:100rpx;' src='../../resources/icon/fxghy.png'></image>
+          <view style='font-size:30rpx;'>分享好友</view>
+        </view>
+        <view style='text-align:center;float:left;padding-left:15px;padding-right:15px;'>
+          <image style='width:100rpx;height:100rpx;' src='../../resources/icon/cqjc.png'></image>
+          <view style='font-size:30rpx;'>查券教程</view>
+        </view>
+        <view style='text-align:center;float:left;padding-left:15px;padding-right:15px;'>
+          <image style='width:100rpx;height:100rpx;' src='../../resources/icon/xcxsz.png'></image>
+          <view style='font-size:30rpx;'>小程序设置</view>
+        </view>
+        <view style='text-align:center;float:left;padding-left:15px;padding-right:15px;color:#fff'>
+          <image style='width:100rpx;height:100rpx;' src=''></image>
+          <view style='font-size:30rpx;'>我的订单</view>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+</scroll-view>

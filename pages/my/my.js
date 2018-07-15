@@ -5,14 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    message:false,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    wx.setNavigationBarTitle({
+      title: '个人中心',
+    })
   },
 
   /**
@@ -62,5 +64,8 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  changeSwitch:function(e){
+    console.log(e.detail.value)
   }
 })

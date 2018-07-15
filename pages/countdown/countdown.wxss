@@ -1,1 +1,43 @@
 /* pages/countdown/countdown.wxss */
+page{
+  font-family: '微软雅黑';
+  color: #8f8f97;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #000;
+  font-size: 14px;
+  line-height:40px;
+  margin-top:30px;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height:40rpx;
+  padding-left:20px;
+  padding-right:20px;
+  
+}
+.navbar .item.active{
+  color: #fff;
+  background: #9B00E6;
+}
+.navbar .item.active:after{
+  /* content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #FD8AA4; */
+}
+/*隐藏滚动条*/
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+  
+}
